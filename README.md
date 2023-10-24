@@ -4,11 +4,11 @@ Este es el repositorio del proyecto "Simulador de Lista de Compras". A continuac
 
 mi_proyecto/
 |-- backend/
-| |-- app.py
-| |-- venv/
+| |-- 
+| |-- 
 |-- frontend/
-| |-- public/
-| |-- src/
+| |-- 
+| |-- 
 |-- venv/
 |-- README.md
 
