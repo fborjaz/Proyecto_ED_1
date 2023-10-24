@@ -24,4 +24,4 @@ class ListItems(models.Model):
     quantity = models.PositiveIntegerField()
     added_at = models.DateTimeField(auto_now_add=True)
 
-    
+
