@@ -1,4 +1,4 @@
-import { <link rel="stylesheet" href="" /> } from 'react-router-dom';
+import { link } from 'react-router-dom';
 
 export function Navagation() {
   return (
