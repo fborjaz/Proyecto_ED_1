@@ -1,7 +1,15 @@
-from django.urls import path
-from . import views
+from django.urls import path, include
+from rest_framework.documentation import include_docs_urls
+from rest_framework import routers
+from tasks import views  #
+
+# api versioning
+router = routers.DefaultRouter()  
+router.register(r'tasks', views.ItemViewSet, 'task')
 
 urlpatterns = [
+    path("api/v1/", include(router.urls)), 
+    path('docs/', include_docs_urls(title='Simulador API', description='RESTful API for Simulador DJ')),
     path('items/', views.ItemList.as_view(), name='item-list'),
     path('items/<int:pk>/', views.ItemDetail.as_view(), name='item-detail'),
     path('shoppinglists/', views.ShoppingListList.as_view(), name='shoppinglist-list'),
