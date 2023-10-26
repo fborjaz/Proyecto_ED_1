@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getAllShopping } from "../api/shopping-api";
+import { ShoppingCard } from "./ShoppingCard";
 
 export function TasksList() {
   const [shopping, setShopping] = useState([]);
@@ -7,19 +8,16 @@ export function TasksList() {
   useEffect(() => {
     async function loadShopping() {
       const res = await getAllShopping();
-    setShopping(res.data);
+      setShopping(res.data);
     }
     loadShopping();
   }, []);
 
-  return <div>
-    
-    {shopping.map(shopping => (
-      <div key={shopping.id}>
-        <h1>{shopping.name}</h1>
-        <p>{shopping.description}</p>
-      </div>
-    ))}
-
-  </div>;
+  return (
+    <div>
+      {shopping.map((shopping) => (
+        <ShoppingCard key={shopping.id} shopping={shopping} />
+      ))}
+    </div>
+  );
 }
