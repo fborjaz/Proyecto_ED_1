@@ -1,5 +1,5 @@
 import Dish from './Dish'
-import dishList from '@/utils/dishList'
+import dishList from '../utils/dishList'
 import styles from '../styles/components/Dishes.module.scss'
 
 function Dishes() {
