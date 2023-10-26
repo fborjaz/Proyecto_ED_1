@@ -2,6 +2,7 @@
 
 Este es el repositorio del proyecto "Simulador de Lista de Compras". A continuación, se presenta la estructura del directorio del proyecto:
 
+```text
 Simulador_/
 |-- backend/
 | |-- 
@@ -12,6 +13,7 @@ Simulador_/
 |-- venv/
 |-- README.md
 
+```
 
 ## Descripción del Proyecto
 
