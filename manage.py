@@ -2,7 +2,9 @@
 """Django's command-line utility for administrative shopping."""
 import os
 import sys
+import disable_pyc
 
+sys.dont_write_bytecode = True
 
 def main():
     """Run administrative shopping."""
