@@ -1,12 +1,12 @@
 from django.urls import path, include
 from rest_framework.documentation import include_docs_urls
 from rest_framework import routers
-from tasks.views import ItemViewSet
-from tasks import views
+from shopping.views import ItemViewSet
+from shopping import views
 
 # api versioning
 router = routers.DefaultRouter()  
-router.register(r'tasks', views.ItemViewSet, 'task')
+router.register(r'shopping', views.ItemViewSet, 'shopping')
 
 urlpatterns = [
     path("api/v1/", include(router.urls)), 
