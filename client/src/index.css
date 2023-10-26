@@ -1,4 +1,39 @@
-body {
+/* body {
   background-color: #202020;
   color: white;
+} */
+
+
+/* App.css */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.home-container h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.home-container p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.home-container button {
+  font-size: 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.store {
+  display: flex;
+  /* Estilos para la tienda */
 }
