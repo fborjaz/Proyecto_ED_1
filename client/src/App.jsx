@@ -6,9 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path = "/" element = {<Navigate to = "/tasks" />} />
-        <Route path = "/tasks" element = {<TasksPage />} />
-        <Route path = "/tasks-create" element = {<TasksFormPage />} />
+        <Route path = "/" element = {<Navigate to = "/shopping" />} />
+        <Route path = "/shopping" element = {<TasksPage />} />
+        <Route path = "/shopping-create" element = {<TasksFormPage />} />
       </Routes>
     </BrowserRouter>
   )
