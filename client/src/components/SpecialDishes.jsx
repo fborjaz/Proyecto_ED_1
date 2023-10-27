@@ -1,5 +1,5 @@
-import { Autoplay, Pagination } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper';
 import SpecialDish from './SpecialDish'
 import specialDishes from '../utils/specialDishes'
 import styles from '../styles/components/SpecialDishes.module.scss'
